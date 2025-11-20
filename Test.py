@@ -1,4 +1,4 @@
-baza_dannych = {
+meme_dict = {
     'LOL': 'odpowiedź na coś zabawnego',
     'CRINGE': 'coś dziwnego lub wstydliwego',
     'ROFL': 'odpowiedź na żart',
@@ -6,11 +6,11 @@ baza_dannych = {
     'CREEPY': 'straszny, złowieszczy',
     'AGGRO': 'stać się agresywnym/zły'
 }
-print('Wsztkie slowa', baza_dannych)
+print('Wszystkie slowa', meme_dict)
 
-slowo = input('Napisz slowo ktore zmeiniemy')
+word = input("Wpisz słowo, którego nie rozumiesz (używaj wielkich liter!): ")
 
-if slowo in baza_dannych:
-    new_value = input('Podaj nowe slowo:')
-    baza_dannych [slowo] = new_value
-    print('zaktualizowana baza dannych: ', baza_dannych)
+if word in meme_dict.keys():
+    print(meme_dict[word])
+else:
+    print("Nie mamy takiego słowa")
